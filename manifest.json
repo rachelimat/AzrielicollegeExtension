@@ -1,0 +1,20 @@
+{
+    "name" : " My google search",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description" : "Some descp here",
+    "permissions": ["scripting","activeTab"],
+    "host_permissions": [
+        "https://yedion.jce.ac.il/yedion/fireflyweb.aspx/*"
+      ],
+    
+       
+    "content_scripts" : [
+        {
+            "js" : ["jquery.js","init.js"],
+            "css": ["styles.css"],
+            "matches" : ["https://yedion.jce.ac.il/yedion/fireflyweb.aspx/*"]
+        }
+    ]
+}
+
